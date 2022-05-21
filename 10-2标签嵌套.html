@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>标签嵌套</title>
+	</head>
+	<body>
+		1.块级元素
+			常见块级：div，所有的布局元素：header content footer h1-h6  p ul  li...
+
+		2.行级元素
+			常见:a span strong b i sub sup ...
+	
+		3.行内块级元素
+			常见：img input video audio...
+			
+		嵌套关系：
+		1.块级元素：
+			可以嵌套块级元素，行级元素，行内块元素
+			<div> <div> <h1><p></p></h1></div></div>
+			<div><apan><a href=""></a></apan></div>
+			<div><img src="" alt="" /> <input type="text" /></div>
+		2.行级元素
+			可以嵌套行级元素，行内块元素，如要嵌套把行级元素转为块级元素
+			<a href=""> <span> <img src="" alt="" /></span></a>
+		3.行内块元素
+			只能嵌套行级元素
+			<video src=""> <span></span></video>
+			
+		4.特例：
+			h1-h6，p不能嵌套块级元素
+			<p> <div>我要学习</div></p>
+			li可以嵌套所有的元素标签
+	</body>
+</html>
