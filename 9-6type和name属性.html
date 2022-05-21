@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>type和name，value和placeholder属性</title>
+	</head>
+	<body>
+		1.input是最常用的表单控件
+		2.搭配form使用，同样可以放在表单以外
+		3.input属性的type：
+			a.指定输入文本类型：text（单行文本框） passward submit
+		4.name表示在传递参数时的参数名称。
+		5.value：输入框中默认值，会发动到服务器。
+		6.placeholder:当点击之后会清除默认value值，默认值不会发送到服务器
+		<form action="http://127.0.0.1/51zxw.php" method="post">
+			<input type="text" name="uname"/>
+			<input type="submit" value="确定" />
+			<input type="" value="请输入" placeholder="请输入。。。" />
+		</form>
+	</body>
+</html>
