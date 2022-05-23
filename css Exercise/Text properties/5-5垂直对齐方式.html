@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>垂直对齐方式</title>
+		<style type="text/css">
+			.a{
+				font-size: 40px;
+				background: red;
+			}
+			.b{
+				font-size: 20px;
+				background: yellow;
+				/*vertical-align: baseline;*/
+				vertical-align: sub;
+			}
+		</style>
+	</head>
+	<body>
+		<!--<p>19.9 <sub>元</sub></p>
+		<p>19.9 <sup>元</sup></p>-->
+		
+		<!--垂直对齐方式：-->
+		<!--主要所用：行级元素/行内块元素/表格元素-->
+		<!--vertical-align: baseline;-->
+		<!--1.baseline：默认值，对齐父元素基线-->
+		<!--2.sub:对齐下标基线-->
+		<!--3.supper：对齐上标基线-->
+		<!--4.top：对其上标-->
+		<!--5.bottom:对齐下标-->
+		<!--6.middle:居中对齐-->
+		<div>
+			<span class="a">19.9</span>
+			<span class="b">元</span>
+		</div>
+	</body>
+</html>
