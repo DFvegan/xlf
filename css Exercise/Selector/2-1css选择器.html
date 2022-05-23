@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>css选择器</title>
+		<style type="text/css">
+			*{
+				color: black;
+			}
+			div{
+				color: red;
+				font-size: 35px;
+			}
+			p{
+				color: yellow;
+			}
+			
+			ul{
+				font-size: 75px;
+			}
+			#four{
+				color: red;
+			}
+			.zx{
+				font-size: 20px;
+				color: green;
+				font-weight: 500;
+			}
+			.sg{
+				font-size: 30px;
+			}
+			
+		</style>
+	</head>
+	
+	<body>
+		<!--标签选择器：
+			1.通过标签选择元素
+			2.无论标签选择多深都可以使用（标签选择都会选择）
+			3.标签选择的是所有而不是一个
+			4.所有的元素都可以使用标签选择
+			-->
+			
+			
+			
+		<div>我爱学习</div>
+		<header>
+			<div>我爱学习1</div>
+			<p>我要学习</p>
+		</header>
+		<p>我要学习</p>
+		
+		
+		<!--id选择器：
+			1.任何元素都可以有id属性，因为id属性是标准属性
+			2.使用id选择器前要在id前添加#
+			3.只能选择一个元素，同一个页面保证id的唯一，即使有不同元素，有相同id也属于非法
+			4.定义id时必须以字母开头，可以包含数字  下划线符号等
+			5.定义id时，不要与标签名相同-->
+		
+		<ul>
+			<li id="one">我爱学1</li>
+			<li id="two">我爱学2</li>
+			<li id="three">我爱学3</li>
+			<li id="four">我爱学4</li>
+			<li id="five">我爱学5</li>
+		</ul>	
+		
+		<!--类选择器：
+		1.标准属性，任何元素都可以class属性
+		2.使用class选择器前要在id前添加点.
+		3.class选择器可以被多个元素共同使用，因为不同元素可以有相同的class值
+		4.可以使用多个class名字
+		5.尽量使用类选择器，而不是id选择器-->
+		<div>
+			<div class="zx">我爱学习</div>
+			<p class="zx sg">我爱学习</p>
+			<span class="zx">我爱学习</span>
+			<strong class="sg">我爱学习</strong>
+		</div>	
+			
+			
+<!--			
+		通用选择器：
+		1.可以选中页面中的所有元素
+		2.使用在style中用通配符*{}进行选择
+		3.使用部分：特定样式
+		-->
+		<div >
+			ha
+		</div>
+		
+		
+		
+	</body>
+</html>

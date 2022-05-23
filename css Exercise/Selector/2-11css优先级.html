@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>css优先级</title>
+		<style type="text/css">
+			div #one{
+				color: green;
+			}
+
+			div{color: red;}
+			*{color: blue;}
+			a{color: bisque;}
+			.abc{color: darkviolet;}
+			#one{color: yellow;}
+			
+			div .abc{ color: black;}
+		</style>
+	</head>
+	<body>
+		<!--优先级(从低到高)：-->
+		<!--继承样式-浏览器预设样式-通用选择器-标签选择器-类选择器-id选择器-->
+		<!--选择越精确，优先级越高-->
+		<!--当优先级相同时，后写的样式会覆盖先写的-->
+		<!--优先级最高的是行内样式-->
+		<div>
+			<a href="" class="abc" id="one" style="color: aqua;">听谁的</a>
+			<br />
+			<span>听谁的1</span>
+		</div>
+	</body>
+</html>
