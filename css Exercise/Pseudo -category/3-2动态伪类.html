@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>动态伪类</title>
+		<style type="text/css">
+			div:hover{
+				color: red;
+				font-size: 25px;
+				font-weight: 500;
+			}
+			div:active{
+				color: blue;
+			}
+			input:focus{
+				color: yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<!--动态伪类：用于任何元素-->
+		<!--hover:鼠标放到元素上的状态，最常用的状态-->
+		<!--active:鼠标点击未释放时状态-->
+		<!--focus:输入框在获得焦点时状态-->
+		<div>我爱学习</div>
+		<input type="text" value="请输入。。。" />
+	</body>
+</html>

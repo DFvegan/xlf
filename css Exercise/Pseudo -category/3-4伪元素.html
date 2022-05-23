@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>伪元素</title>
+		<style type="text/css">
+			div::first-letter{
+				color: red;
+			}
+			div::first-line{
+				color: blue;
+			}
+			div::before{
+				content: "我不学习";
+				color:pink;
+			}
+			div::after{
+				content: 我不学习;
+			}
+		</style>
+	</head>
+	<body>
+		<!--意义：文档结构中没有出现的元素-->
+		<!--伪元素使用的是：：-->
+		<!--::first-letter:选择的是元素中第一个元素-->
+		<!--::first-line:选择的是元素的一行，会根据页面调整只显示第一行-->
+		
+		<!--::before  在元素之前添加新内容，必须配合content使用-->
+		<!--::after  在元素之后添加新内容，必须配合content使用-->
+		<!--可以把伪元素当成一个元素设置样式使用-->
+		<div>
+			我爱学习我爱学习我爱学习我爱学习我爱学习我爱学习我爱学习我爱学习我爱学习我爱学习我爱学习我爱学习我爱学习我爱学习我爱学习我爱学习我爱学习我爱学习我爱学习
+		</div>
+	</body>
+</html>
