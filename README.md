@@ -1,2 +1,0 @@
-# xlf
-About learn process
