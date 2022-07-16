@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>get/post区别</title>
+	</head>
+	
+	
+	<body>
+		get和post区别：
+			get：数据会依附在网址之后，不安全，数据量比较小
+			post：数据不会依附在网址之后，会将所有数据进行打包，发送给服务器，等待读取，数据量不受限制。
+		<form action="https://www.51zxw.net" method="post">
+			<input type="text" name="myname" id="myname" value="请输入..." />
+			<input type="submit" value="提交" />
+			<input type="submit" value=""/>
+		</form>
+	</body>
+</html>
