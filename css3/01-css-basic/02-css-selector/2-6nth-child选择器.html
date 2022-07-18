@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>nth-child选择器</title>
+		<style type="text/css">
+			li:nth-child(3){
+				/*选择的是li的父元素的第三个li元素*/
+				color: red;
+			}
+			li:nth-child(2n+1){
+				/*选择的是li的父元素的奇数元素*/
+				color: blue;
+			}
+			li:nth-child(2n){
+				/*选择的是li的父元素的偶数元素*/
+				color: blue;
+			}
+			li:nth-child(-n+4){
+				/*选择的是li的父元素的前四个元素*/
+				color: blue;
+			}
+			li:nth-child(n+4){
+				/*选择的是li的父元素的四以后的所有子元素*/
+				color: blue;
+			}
+			li:nth-child(n+3):nth-child(-n+6){
+				/*选择的是li的父元素的3以后到6的所有子元素*/
+				color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>我爱学习1</li>
+			<li>我爱学习2</li>
+			<li>我爱学习3</li>
+			<li>我爱学习4</li>
+			<li>我爱学习5</li>
+			<li>我爱学习6</li>
+			<li>我爱学习7</li>
+			<li>我爱学习8</li>
+		</ul>
+	</body>
+</html>
