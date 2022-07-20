@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>背景尺寸</title>
+		<style type="text/css">
+			div{
+				width: 400px;
+				height: 100px;
+				background-color: red;
+				background-image: url(../img/header.jpg);
+				background-repeat: no-repeat;
+				/*background-size: 400px 100px;*/
+				/*background-size: 100% 80%;*/
+				/*background-size: contain;*/
+				/*background-size: cover;*/
+				background-size: 100% auto;
+			}
+		</style>
+	</head>
+	<body>
+		<!--背景尺寸：-->
+		<!--background-size：宽度  高度-->
+			<!--1.尺寸单位：背景图片的高度和宽度尺寸是一个固定的值-->
+			<!--2.百分比  ：以父元素来设置宽高-->
+			<!--3.contain:把背景图片扩展至最大尺寸，使宽度或者高度完全按适应内容区域-->
+			<!--4.cover:把背景图片扩展至足够大，保持原来的宽高比例，使背景图片完全覆盖元素，背景图片的某些部分无法显示在元素区域内-->
+			<!--5.当只设置一个值，另一个值时auto，会保持原来的比例-->
+		<div></div>
+	</body>
+</html>
