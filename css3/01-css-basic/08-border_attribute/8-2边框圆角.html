@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>圆角样式</title>
+		<style type="text/css">
+			div{
+				width: 200px;
+				height: 100px;
+				line-height: 100px;
+				text-align: center;
+				background: #008000;
+				
+				border: 2px red solid;
+				border-top-left-radius:30px 30px;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<!--圆角边框：
+			1.圆角方向:通过垂直和水平方向表示一个角
+			先是垂直方向/再是水平方向
+			方向1：上下 /方向2：左右-->
+			
+			<!--2.圆角半径：
+				先是水平半径/再是垂直半径
+				半径：水平半径（left/right）+垂直半径（top/bottom）
+				单位：所有的合法单位-->
+				<!--当设置成一个值时，另一个值和设置的这个值一样-->
+				<!--百分比不是一个准确的值，转换成准确值就不一样-->
+			<!--3.当使用百分比设置半径时候，半径的值以长度或者宽度的百分比为值-->
+			
+			<!--4.设置圆角边框位置
+			1. 	同时设置四个圆角边框：
+				border-radius:上左角 上右角 下右角 下左角；
+				border-radius:10px 20px 30px 40px;
+			
+			2.	设置三个像素：上左角  上右角下右角  下左角；
+				border-radius:10px 20px 40px;
+				
+			3. 	设置两个值：	上左角下右角     上右角下左角；
+				border-radius:10px 40px;
+				
+			4. 	设置一个值：四个角都会设置；
+				border-radius:10px；-->
+			<div>我爱学习</div>
+	</body>
+</html>
