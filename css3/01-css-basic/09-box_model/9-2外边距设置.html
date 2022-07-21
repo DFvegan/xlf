@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>外边距设置</title>
+		<style type="text/css">
+			.lou{
+				width: 150px;
+				height: 100px;
+				background: blue;
+				/*float: right;
+				margin-top: 50px;
+				margin-bottom: 50px;
+				margin-left: 50px;
+				margin-right: 50px;*/
+				/*参照与父级百分比*/
+				/*margin-top: 10%;*/
+				
+				/*简写:*/
+				margin: 10px 20px 30px 40px;
+
+			}
+		</style>
+	</head>
+	
+	<body>
+		<!--外边距要素：
+			1.外边距方向：top bottom left right
+			2.外边距尺寸：合法的尺寸单位，百分比-->
+		<!--外边距语法：margin—方向：尺寸；
+			1.使用百分比所用的是父级尺寸
+			2.使用正值时候元素会扩张，使用负值时，元素会收缩
+		-->
+		<!--外边距简写方式：-->
+			<!--1.四个值：margin:top right bottom left-->
+			<!--2.三个值：margin:top right/left bottom--> 
+			<!--3.两个值：margin:top/bottom left/right-->
+			<!--4.一个值：四个边-->
+		<div style="background: red;height: 50px;"></div>
+		<div class="lou"></div>
+		<div style="background: black;height: 50px;clear: right;"></div>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>溢出隐藏</title>
+		<style type="text/css">
+			div{
+				width: 400px;
+				height: 200px;
+				border: 2px solid red;
+				/*overflow: visible;*/
+				/*overflow: hidden;*/
+				/*overflow: scroll;*/
+				overflow: auto;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<!--子元素照片溢出父盒子-->
+		overflow: 规定元素如果溢出内容框发生的效果
+			1.visible：内特容不会被修剪，显示在框外
+			2.hidden:溢出内容框的内容会被修剪
+			3.scroll:内容会被修剪，会显示滚动条以便查看内容
+			4.auto：根据子元素大小来决定，如果大于父框则会被修剪有滚动条，如果小于父级框则不会显示滚动体.
+		<div>
+			<img src="../img/header.jpg"/>
+		</div>
+	</body>
+</html>

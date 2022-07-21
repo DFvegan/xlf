@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>内边距踩坑</title>
+		<style type="text/css">
+			
+			.a{
+				width: 300px;
+				height: 200px;
+				background: green;
+				float: left;
+				padding: 30px;
+				border: 10px solid red;
+				
+				-moz-box-sizing: border-box;/*火狐浏览器可以使用*/
+				/*-webkit-box-sizing: border-box;谷歌浏览器和safari浏览器可以使用*/
+				
+			}
+			.img_a{
+				height: 100%;
+				width: 100%;
+			}
+			.b{
+				width: 300px;
+				height: 200px;
+				background: orange;
+				float: left;
+				/*padding: 30px;
+				border: 10px solid red;*/
+			}
+			.img_b{
+				height: 100%;
+				width: 100%;
+			}		</style>
+	</head>
+	<body>
+		<!--误区:
+			1.当两个盒子之间只有一点像素，运用外边距会让盒子挤下去
+		解决：
+			border_sizing:
+			1.content-box:内边距和边框是在元素的宽高之外进行绘制
+			2.border-box：内边距和外边距实在元素的宽高值内进行绘制（设置的宽度：左外边距+左边框+左内边距+内容+右内边距+右边框+右外边距）	-->
+		
+		
+		<!--IE9以下的浏览器不兼容-->
+		<div class="a">
+			<img class="img_a" src="../img/header.jpg"/>
+		</div>
+		<div class="b">
+			<img class="img_b" src="../img/header.jpg"/>
+		</div>
+	</body>
+</html>

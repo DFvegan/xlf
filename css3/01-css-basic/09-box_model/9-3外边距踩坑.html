@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>外边距踩坑</title>
+		<style type="text/css">
+			.lou1{
+				width: 150px;
+				height: 100px;
+				background: blue;
+				margin-left: 30px;
+			}
+			.lou2{
+				width: 150px;
+				height: 100px;
+				background: green;
+				margin-left: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		
+		误区：
+		<!--块级元素-->
+			<!--1.元素上下排列时候，上下外边距取最大值
+				2.当元素左右排列时候，外边距会相加-->
+		<!--行级元素-->
+			<!--1.只有左右外边距，没有上下外边距-->
+			
+		<!--行内块元素-->
+				<!--元素生效-->
+			
+		<div style="background: red;height: 50px;"></div>
+		<span class="lou1">我爱学习</span>
+		<b class="lou2">我爱学习</b>
+		<div style="background: black;height: 50px;clear: left;"></div>
+	</body>
+</html>
