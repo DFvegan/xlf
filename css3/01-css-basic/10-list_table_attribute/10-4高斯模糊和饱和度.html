@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>高斯模糊和饱和度</title>
+		<link rel="stylesheet" type="text/css" href="reset.css"/>
+		<style type="text/css">
+			div{
+				width: 400px;
+				background: red;
+			}
+			img{
+				filter: blur(2px);
+				/*filter: saturate(10%);
+				filter: grayscale(0%);
+				filter: contrast(0%);*/
+				
+				-webkit-filter: contrast(75%);
+				filter: opacity(50%);
+			}
+		</style>
+	</head>
+	<body>
+		<!--所有IE浏览器都不支持滤镜-->
+		<!--老版谷歌和欧朋需要加前缀-->
+		<!--滤镜属性：filter
+			定义图像的可视效果
+		-->
+		1.高斯模糊：filter: blur(合法尺寸单位，除过%);默认值0，值越大图像越模糊
+		2.图像饱和度：filter: saturate(百分比);
+		值为零时候为黑白，值可以超过100%，会有更高饱和度。
+		3.灰度设置：filter: grayscale(百分比0%~100%之间，默认0%。)当值为100%，图像会变成黑白图像
+		4.对比度：filter: contrast(百分比，默认100%)若为100%没变化，若为0%则为全黑，超过100%运用的是更低对比度
+		5.透明度：filter: opacity(百分比)
+		默认100%不透明
+		<div>
+		<img src="../img/header.jpg" />
+		</div>
+	</body>
+</html>
