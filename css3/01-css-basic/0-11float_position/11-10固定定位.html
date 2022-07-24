@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>固定定位</title>
+		<style type="text/css">
+				.box{
+				width: 300px;
+				height: 302px;
+				border: 1px solid black;
+				margin: 50px auto;
+			}
+			.psd1,.psd2,.psd3
+			{
+				width: 100px;
+				height: 100px;
+				
+			}
+			.psd1{
+				background: red;
+			}
+			.psd2{
+				background: green;
+				position: fixed;
+				top: 50px;
+				left: 100px;
+			}
+			.psd3{
+				background: blue;
+			}
+		</style>
+	</head>
+	<body>
+		固定定位：
+			position: fixed;
+			相对于浏览器窗口在运动
+		<div class="box">
+				<div class="psd1"></div>
+				<div class="psd2"></div>
+				<div class="psd3"></div>
+		</div>
+	</body>
+</html>
