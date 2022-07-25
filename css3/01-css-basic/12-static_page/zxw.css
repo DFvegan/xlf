@@ -1,0 +1,476 @@
+/*公共样式*/
+.content_box{
+	width: 1200px;
+	margin: 0 auto;
+}
+.m_title{
+	width: 100%;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 400;
+	background: url();
+	
+}
+.m_list a{
+	display: block;
+	float: left;
+	border-radius: 10px;
+	box-shadow: 0 0 10px #ccc;
+	overflow: hidden;
+}
+.m_list a p{
+	height: 30px;
+	line-height: 30px;
+	padding: 0 10px;
+	overflow: hidden;
+}
+.m_list a img{
+	width: 100%;
+	height: 160px;
+	-webkit-filter: opacity(85%);
+	filter: opacity(85%);
+	
+}
+.m_list a:hover img{
+	-webkit-filter: opacity(100%);
+	filter: opacity(100%);
+}
+.m_list a:hover p{
+	color: #9400D3;
+	
+}
+/*公共样式*/
+/*logo，搜索，用户信息开始*/
+
+.h_top{
+	height: 88px;
+	position: relative;
+}
+.logo{
+	width: 214px;
+	height: 51px;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 15px;
+}
+.h_top .search{
+	width: 330px;
+	height: 36px;
+	border: 1px solid gray;
+	background: #fff;
+	position: absolute;
+	left: 50%;
+	margin-left: -165px;
+	top: 26px;
+	border-radius: 18px;
+	overflow: hidden;
+}
+.h_top .search .inp_l{
+	width: 260px;
+	height: 36px;
+	border: none;
+	padding: 0 20px;
+	
+}
+.h_top .search .inp_r{
+	width: 60px;
+	height: 36px;
+	border: none;
+	border-radius: 18px;
+	background: #acce22;
+}
+.h_top .user{
+	width: 180px;
+	height: 28px;
+	line-height: 34px;
+	position: absolute;
+	right: 0;
+	top: 30px;
+}
+.h_top .user a{
+	display: inline-block;
+	width: 76px;
+	height: 28px;
+	text-align: center;
+	font-size: 16px;
+	color: #000000;
+	
+}
+/*logo，搜索，用户信息结束*/
+
+		
+/*导航开始*/
+nav{
+	background: #363636;
+}
+nav .nav_box{
+	height:44px;
+	line-height: 44px;
+	text-align: center;
+}
+.nav_box .nav_l{
+	width: 800px;	
+}
+.nav_box  a{
+	display: block;
+	width: 80px;
+	height: 44px;
+	float: left;
+	color: #fff;
+}
+.nav_box .nav_r{
+	width: 240px;
+}
+.nav_box .nav_r a{
+	font-size: 16px;
+}
+.nav_box .nav_l a:hover{
+	font-size: 16px;
+	color: #00aeff;
+}	
+.nav_box .nav_r a:hover{
+	background: #ca3333;
+}
+/*导航结束*/
+
+
+/*幻灯片开始*/
+.hdp{
+	background: #ff9000;
+}
+.hdp .content_box{
+	height: 330px;
+	overflow: hidden;
+	position: relative;
+}
+.hdp_img{
+	width: 3600px;
+	position: absolute;
+	left: 0;
+}
+.hdp_img a{
+	display: block;
+	width: 1200px;
+	height: 330px;
+}
+.hdp .content_box .wzgg{
+	position: absolute;
+	right: 5px;top: 10px;
+	width: 250px;
+	height: 310px;
+	background: rgba(0,0,0,0.7);
+	border-radius: 5px;
+	padding: 20px;
+}
+.wzgg h3{
+	text-align: center;
+	color: white;
+	padding-bottom: 10px;
+}
+.wzgg ul{
+	color: white;
+	
+}
+.wzgg ul li{
+	list-style: disc;
+}
+.wzgg ul li a{
+	color: white;
+	font-size: 12px;
+}
+/*幻灯片结束*/
+
+/*远程培训开始*/
+.ycpxb{
+	height: 160px;
+	padding—top: 22px;
+}
+.ycpxb a{
+	display: block;
+	width: 210px;
+	height: 114px;
+	float: left;
+	background: no-repeat 0 0/100% 100%;
+	margin: 0 15px;
+	border-radius: 12px;
+	color: white;
+	font-size: 20px;
+	font-weight: 700;
+	text-align: center;
+	line-height: 114px;
+	overflow: hidden;
+}
+.ycpxb a:hover{
+	background-size: 110%;
+}
+.ycpxb .a1{
+	background: red;
+}
+.ycpxb .a2{
+	background: green;
+}
+.ycpxb .a3{
+	background: yellow;
+}
+.ycpxb .a4{
+	background: blue;
+}
+.ycpxb .a5{
+	background: orange;
+}
+.ycpxb a span{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.3);
+	text-shadow: 4px 2px 5px black;
+
+}
+.ycpxb a .span2{
+	line-height: normal;
+	padding-top: 25px;
+}
+/*远程培训结束*/
+
+
+/*最新课程开始*/
+.zx_box a{
+	width: 270px;
+	height: 240px;
+	margin: 20px 15px;
+	
+}
+.zx_box a img{
+	height: 210px;
+	
+}
+
+/*最新课程结束*/
+
+
+/*热门推荐开始*/
+.rm_box a{
+	width: 210px;
+	height: 190px;
+	margin: 20px 15px;
+	
+}
+.rm_box a img{
+	height: 160px;
+}
+.rm_nav a{
+	display: block;
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	float: left;
+	margin: 0 20px;
+	border-radius: 4px;
+}
+.rm_nav .rm_a{
+	background: #9400D3;
+	color: white;
+}
+.rm_nav .rm_b:hover{
+	color: #9400D3;
+}
+/*热门推荐结束*/
+
+
+/*课程分类开始*/
+.kc_box .kc_a{
+	width: 190px;
+	height: 160px;
+	margin: 30px 35px 0 15px;
+}
+.kc_box .kc_b{
+	width: 210px;
+	height: 190px;
+	margin: 20px 15px;
+	
+}
+.kc_box .kc_b img{
+	height: 160px;
+}
+.kcfl .kc_nav{
+	padding: 0 100px 0 15px;
+	position: relative;
+	/*不允许打断单词*/
+	word-break: keep-all;
+	margin-top: 50px;
+	border-bottom: 1px solid gray;
+	padding-bottom: 6px;
+}
+.kcfl .kc_nav .n_a{
+	line-height: 20px;
+	margin-right: 20px;
+}
+.kcfl .kc_nav .n_a:hover{
+	color: blue;
+}
+.kcfl .kc_nav .n_b{
+	display: block;
+	width: 60px;
+	height: 20px;
+	background: #00aeff;
+	border-radius: 4px;
+	text-align: center;
+	color: white;
+	position: absolute;
+	right: 20px;
+	bottom: 6px;
+}
+/*课程分类结束*/
+
+
+/*名师简介开始*/
+.msjj{
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+.ms_box a{
+	display: block;
+	width: 270px;
+	height: 310px;
+	background: #e7e7e7;
+	float: left;
+	margin: 20px 15px;
+	padding: 40px;
+	text-align: center;
+	
+}
+.ms_box a img{
+	width:150px;
+	height: 150px;
+	border-radius: 50%;
+}
+.ms_box a .p1{
+	font-size: 20px;
+	line-height: 40px;
+	padding-top: 20px;
+}
+.ms_box a .p2{
+	color: #6b6b6b;
+}
+/*名师简介结束*/
+
+/*页面尾部开始*/
+footer{
+	padding: 50px 0 ;
+}
+footer .f_p1 b{
+	height: 30px;
+	line-height: 30px;
+	width: 80px;
+	text-align: center;
+	margin: 0 20px;
+	
+}
+footer .f_p1 span{
+	margin: 0 10px;
+}
+footer .f_p2 b{
+	height: 30px;
+	line-height: 30px;
+	width: 80px;
+	text-align: center;
+	margin: 0 20px;
+	
+}
+footer .f_p2 a{
+	display: inline-block;
+	width: 80px;
+	height: 30px;
+	background: red;
+	margin: 0 10px;
+}
+footer .f_p3{
+	margin-top: 15px;
+	padding-left: 130px;
+	padding-right: 100px;
+}
+footer .f_p3 a{
+	margin-right: 10px;
+	word-break: keep-all;
+}
+footer .f_p4{
+	text-align: center;
+}
+footer .f_p4 a{
+	margin-top: 20px;
+	display: inline-block;
+	width: 70px;height: 20px;
+	background: #3899dd;
+	border-radius: 4px;
+}
+/*页面尾部结束*/
+
+/*左边栏开始*/
+
+.kstz{
+	width: 66px;
+	text-align: center;
+	position: fixed;
+	top:150px ;
+	left: 50%;
+	margin-left: -686px;
+	
+}
+.kstz h4{
+	color: blue;
+	margin-bottom: 10px;
+}
+.kstz a{
+	display: block;
+	width: 66px;
+	height: 66px;
+	border-radius: 50%;
+	box-shadow: 0 0 8px #CCCCCC ;
+	margin-bottom: 16px;
+	padding-top: 12px;
+	
+}
+.active{
+	background: #00aeff;
+	color: #fff;
+}
+.active:hover{
+	color: #fff;
+}
+/*左边栏结束*/
+
+/*右边栏开始*/
+.ycwx{
+	position: fixed;
+	top:200px ;
+	right: 50%;
+	margin-right: -650px;
+	
+}
+.ycwx a{
+	display: block;
+	width: 50px;
+	height: 50px;
+	border-radius: 4px;
+	box-shadow: 0 0 8px #CCC;
+	text-align: center;
+	margin-bottom: 10px;
+	padding-top: 4px;
+}
+.ycwx span{
+	display: none;
+}
+.ycwx .wx{
+	background: url();
+}
+.ycwx a:hover{
+	display: block;
+}
+.ycwx a:hover{
+	background: none;
+}
+/*右边栏结束*/
