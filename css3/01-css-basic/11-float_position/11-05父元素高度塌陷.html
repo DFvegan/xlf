@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>父元素高度塌陷</title>
+		<link rel="stylesheet" type="text/css" href="reset.css"/>
+		<style type="text/css">
+			ul{
+				border: 1px red solid;
+				width: 352px;
+				margin: 50px auto;
+			}
+			
+			.a,.b,.c{
+				width: 100px;
+				height: 100px;
+			}
+			.a{background: green;}
+			.b{background: blue;}
+			.c{background: orange;}
+			
+		</style>
+	</head>
+	<body>
+		高度塌陷：
+		<!--由于元素中的子元素设置了浮动属性那么就会造成父元素高度塌陷-->
+		防止高度塌陷：
+		1.设置高度
+		2.给元素内容之后加一个块级元素设置清除两侧浮动
+		3.使用伪元素在元素后增加空内容并且清除浮动
+		
+		
+		注意：父元素设置高度事，不用清除浮动，如没有设置高度，一定要清除浮动。
+		<ul class="clearfix">
+			<li class="a fl"></li>
+			<li class="b fl"></li>
+			<li class="c fr"></li>
+		
+		</ul>
+	</body>
+</html>
