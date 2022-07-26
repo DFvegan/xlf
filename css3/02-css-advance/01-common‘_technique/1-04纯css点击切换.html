@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>纯css点击切换2</title>
+		<link rel="stylesheet" type="text/css" href="../reset.css"/>
+		<style type="text/css">
+			.box{
+				width: 302px;
+				height: 302px;
+				border: 1px solid black ;
+				text-align: center;
+				margin: 0 auto;
+				
+			}
+			nav{
+				width: 300px;
+				height: 30px;
+				border-bottom: 2px solid black;
+			}
+			nav a{
+				display: block;
+				width: 100px;
+				height: 28px;
+				float: left;
+			}
+			.content{
+				width: 300px;
+				height: 270px;
+				position: relative;
+			}
+			.cont{
+				width: 300px;
+				height: 270px;
+				text-align: center;
+				line-height: 270px;
+				font-size: 40px;
+				color: white;
+				position: absolute;
+				top: 0;
+				left: 0;
+				
+			}
+			#one{
+				background: red;
+				z-index: 1;
+			}
+			#two{
+				background: green;
+			}
+			#three{
+				background: blue;
+			}
+			#one:target,#two:target,#three:target{
+				z-index: 9;
+				color: yellow;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<!--结构id设置：单独设置背景颜色使用名字~锚点链接-->
+		<!--target选择的是当前被链接的目标元素-->
+			<!--注意：target伪类加在目标元素上，不是点击元素上-->
+		<div class="box">
+			<nav>
+				<a href="#one">按钮1</a>
+				<a href="#two">按钮2</a>
+				<a href="#three">按钮3</a>
+			</nav>
+			<div class="content">
+				<div id="one" class="cont">内容1</div>
+				<div id="two" class="cont">内容2</div>
+				<div id="three" class="cont">内容3</div>
+			</div>
+		</div>
+	</body>
+</html>

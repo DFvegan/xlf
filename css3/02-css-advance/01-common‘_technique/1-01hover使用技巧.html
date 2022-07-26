@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>hover使用技巧</title>
+		<style type="text/css">
+			#xue{
+				width: 400px;
+				height: 400px;
+				background: black;
+			}
+			.xue2{
+				width: 150px;
+				height: 150px;
+				background: red;
+			}
+			/*.xue2:hover{
+				width: 300px;
+				height: 300px;
+				background: green;
+			}*/
+			/*#xue:hover .xue2{
+				width: 300px;
+				height: 300px;
+				background: green;
+			}*/
+			/*#xue:hover .xue2 p{
+				color: white;
+			}*/
+			#xue3:hover~p{
+				color: blue;
+				font-size: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<!--hover状态时：-->
+			<!--1.可以设自己或者后代元素属性-->
+			<!--2.可以设置自己之后兄弟元素的属性-->
+			<!--3.不可以使用祖先元素，使用+则是后面一个变化；使用~则是后面所有变化-->
+		<div id="xue">
+			<div class="xue2">
+				<p>我爱学习</p>
+				<p id="xue3">我爱学习</p>
+				<p>我爱学习</p>
+				<p>我爱学习</p>
+				
+			</div>
+		</div>
+	</body>
+</html>

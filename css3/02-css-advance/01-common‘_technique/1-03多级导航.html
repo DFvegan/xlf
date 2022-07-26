@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>多级导航</title>
+		<link rel="stylesheet" type="text/css" href="../reset.css"/>
+		<style type="text/css">
+			.ul1{
+				width: 502px;
+				height: 52px;
+				border: 1px solid black;
+				margin: 50px auto;
+				text-align: center;
+				
+			}
+			.li1{
+				width: 98px;
+				height: 50px;
+				line-height: 50px;
+				margin: 0 1px;
+				float: left;
+				position: relative;
+			}
+			.li1 div{
+				width: 98px;
+				height: 50px;
+				background: gray;
+			}
+			.ul2{
+				position: absolute;
+				top: 52px;
+				left: 0;
+				display: none;
+			}
+			.li2{
+				width: 98px;
+				height: 50px;
+				background: gray;
+				border-bottom: 1px solid black;
+			}
+			.li1:hover .ul2{
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<!--ul.ul1>li.li1{导航$}*5-->
+			<ul class="ul1">
+				<li class="li1">
+					<div>导航1</div>
+					<ul class="ul2">
+						<li class="li2">二级导航1</li>
+						<li class="li2">二级导航2</li>
+						<li class="li2">二级导航3</li>
+						<li class="li2">二级导航4</li>
+						<li class="li2">二级导航5</li>
+					</ul>
+				</li>
+				<li class="li1">
+					<div>导航2</div>
+					<ul class="ul2">
+						<li class="li2">二级导航1</li>
+						<li class="li2">二级导航2</li>
+						<li class="li2">二级导航3</li>
+						<li class="li2">二级导航4</li>
+						<li class="li2">二级导航5</li>
+					</ul>
+				</li>
+				<li class="li1">
+					<div>导航3</div>
+					<ul class="ul2">
+						<li class="li2">二级导航1</li>
+						<li class="li2">二级导航2</li>
+						<li class="li2">二级导航3</li>
+						<li class="li2">二级导航4</li>
+						<li class="li2">二级导航5</li>
+					</ul>
+				</li>
+				<li class="li1">
+					<div>导航4</div>
+					<ul class="ul2">
+						<li class="li2">二级导航1</li>
+						<li class="li2">二级导航2</li>
+						<li class="li2">二级导航3</li>
+						<li class="li2">二级导航4</li>
+						<li class="li2">二级导航5</li>
+					</ul>
+				</li>
+				<li class="li1">
+					<div>导航5</div>
+					<ul class="ul2">
+						<li class="li2">二级导航1</li>
+						<li class="li2">二级导航2</li>
+						<li class="li2">二级导航3</li>
+						<li class="li2">二级导航4</li>
+						<li class="li2">二级导航5</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</body>
+</html>
