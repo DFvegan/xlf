@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>元素透明设置</title>
+		<link rel="stylesheet" type="text/css" href="../reset.css"/>
+		<style type="text/css">
+			.box{
+				width: 300px;
+				height: 305px;
+				margin: 100px auto;
+				
+			}
+			.box:hover{
+				/*opacity:只能是小数
+				 对元素子元素、孙元素、边框都有效*/
+				opacity: 0.8;
+			}
+			img{
+				width: 300px;
+				height: 300px;
+			}
+			/*img:hover{
+			 	只对图片有作用
+				filter:opacity(90%);
+			}*/
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			
+			<img src="../img/00009_1069.jpg"/>
+		</div>
+	</body>
+</html>

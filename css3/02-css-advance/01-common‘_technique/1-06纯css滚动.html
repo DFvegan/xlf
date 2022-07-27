@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>移动端纯css滚动</title>
+		<link rel="stylesheet" type="text/css" href="../reset.css"/>
+		<style type="text/css">
+			.box{
+				width: 100%;
+				height: 304px;
+				border: 5px solid #000;
+				margin-top: 100px;
+				overflow-x: scroll;
+				/*横向滚动:移动端不会出现滚动条*/
+			}
+			ul{
+				width: 200%;
+				height: 300px;
+			}
+			ul li{
+				width: 15.666%;
+				/*6个列表每个占多少*/
+				height: 300px;
+				margin: 0 0.5%;
+				float: left;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<ul>
+				<li style="background: red;"></li>
+				<li style="background: green;"></li>
+				<li style="background: blue;"></li>
+				<li style="background: yellow;"></li>
+				<li style="background: pink;"></li>
+				<li style="background: orange;"></li>
+			</ul>
+		</div>
+	</body>
+</html>

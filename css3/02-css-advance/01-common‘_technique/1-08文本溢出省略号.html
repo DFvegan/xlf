@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>文本溢出省略号</title>
+		<link rel="stylesheet" type="text/css" href="../reset.css"/>
+		<style type="text/css">
+			p{
+				width: 202px;
+				height: 32px;
+				border: 1px solid black;
+				line-height: 30px;
+				margin: 100px auto;
+				/*溢出隐藏*/
+				overflow: hidden;
+				/*文本变成一行显示*/
+				white-space: nowrap;
+				/*溢出时显示省略号*/
+				text-overflow: ellipsis;
+			}
+		</style>
+	</head>
+	<body>
+		<p>
+			我爱学习我爱学习我爱学习我爱学习我爱学习我爱学习			
+		</p>
+	</body>
+</html>
