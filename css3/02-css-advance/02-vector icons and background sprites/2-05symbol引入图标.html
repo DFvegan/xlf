@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="font-2-03/iconfont.js"></script>
+		<link rel="stylesheet" type="text/css" href="../reset.css"/>
+		<style type="text/css">
+			p{
+				width: 200px;
+				height: 52px;
+				line-height: 50px;
+				margin: 100px auto;
+				border: 1px solid black;
+			}
+			.icon {
+				  width: 1em;
+				  height: 1em;
+				  vertical-align: -0.15em;
+				  fill: currentColor;
+				  overflow: hidden;
+			}
+			#xue{
+				font-size: 40px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--sumbol引入：
+			这是一种全新的使用方式，应该说这才是未来的主流，也是平台目前推荐的用法。相关介绍可以参考这篇文章 这种用法其实是做了一个 SVG 的集合，与另外两种相比具有如下特点：
+	
+			支持多色图标了，不再受单色限制。
+			通过一些技巧，支持像字体那样，通过 font-size, color 来调整样式。
+			兼容性较差，支持 IE9+，及现代浏览器。
+			浏览器渲染 SVG 的性能一般，还不如 png。
+
+		使用步骤如下：
+		第一步：引入项目下面生成的 symbol 代码：
+			<script src="./iconfont.js"></script>
+		第二步：加入通用 CSS 代码（引入一次就行）：
+			<style>
+			.icon {
+			  width: 1em;
+			  height: 1em;
+			  vertical-align: -0.15em;
+			  fill: currentColor;
+			  overflow: hidden;
+			}
+			</style>
+		第三步：挑选相应图标并获取类名，应用于页面：
+			<svg class="icon" aria-hidden="true">
+			  <use xlink:href="#icon-xxx"></use>
+			</svg>-->
+			<p>
+				<svg id="xue" class="icon" aria-hidden="true">
+					<use   xlink:href="#icon-fangdajing1"></use>
+				</svg>
+				我爱学习
+			</p>
+	</body>
+</html>
