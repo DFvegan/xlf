@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../reset.css"/>
+		<style type="text/css">
+			.xue{
+				width: 402px;
+				height: 50px;
+				background: white;
+				margin: 100px auto;
+				border: 1px solid deepskyblue;
+			}
+			.xue a{
+				display: block;
+				width: 100px;
+				height: 50px;
+				line-height: 50px;
+				float: left;
+				text-align: right;
+				padding-right: 20px;
+				background: url(png/png-lie.png) no-repeat;
+			}
+			.xue #a1{
+				background-position: 0 0;
+			}
+			.xue #a2{
+				background-position: 0 -50px;
+			}
+			.xue #a3{
+				background-position: 0 -100px;
+			}
+			.xue #a4{
+				background-position: 0 -150px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--背景大图适用于背景图片，没有专门盒子存放-->
+			<!--1.图标和文字上下排列，要做单行背景图，每个图标所占的高度，等于元素的宽度-->
+			<!--2.图标和文字左右排列，要做单列背景图，每个图标所占的高度，等于元素的高度-->
+		<div class="xue">
+			<a href="" id="a1">
+				<span>首页</span>
+			</a>
+			<a href="" id="a2">
+				<span>搜索</span>
+			</a>
+			<a href="" id="a3">
+				<span>QQ</span>
+			</a>
+			<a href="" id="a4">
+				<span>手机</span>
+			</a>
+		</div>
+	</body>
+</html>
