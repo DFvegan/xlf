@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../reset.css"/>
+		<style type="text/css">
+			.box{
+				width: 400px;
+				height: 400px;
+				background: bisque;
+				margin: 100px auto;
+				overflow: hidden;
+				/*flex转成弹性盒子*/
+				display: -webkit-flex;
+				display: flex;
+		
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				
+				/*子元素在交叉轴对齐方式*/
+				
+				
+				/*在交叉轴开始方向对齐*/
+				/*align-items: flex-start;*/
+				
+				/*在交叉轴结束方向对齐*/
+				/*align-items: flex-end;*/
+				
+				/*在交叉轴居中方向对齐*/
+				/*align-items:center;*/
+				
+				/*表示项目第一行文子基线对齐方式*/
+				/*align-items: baseline;*/
+				
+				
+				align-items: stretch;
+				
+				
+				
+				
+				
+			}
+			.xue{
+				width: 100px;
+				/*height: 50px;*/
+				line-height: 50px;
+				background: red;
+				text-align: center;
+				color: white;
+				margin-top: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		
+			<ul class="box">
+				<li class="xue">xue1</li>
+				<li class="xue">xue2</li>
+				<li class="xue">xue3</li>
+				<!--<li class="xue">xue4</li>
+				<li class="xue">xue5</li>
+				<li class="xue">xue6</li>
+				<li class="xue">xue7</li>
+				<li class="xue">xue8</li>
+				<li class="xue">xue9</li>-->
+			</ul>
+	</body>
+</html>

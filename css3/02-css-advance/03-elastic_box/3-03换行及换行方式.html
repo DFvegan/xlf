@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../reset.css"/>
+		<style type="text/css">
+			.box{
+				width: 400px;
+				height: 400px;
+				background: bisque;
+				margin: 100px auto;
+				overflow: hidden;
+				/*flex转成弹性盒子*/
+				display: -webkit-flex;
+				display: flex;
+				/*默认值:表示主轴是水平正向*/
+				flex-direction: row;
+				
+				/*默认值定义不换行*/
+				/*flex-wrap: nowrap;*/
+				/*换行:默认交叉轴方向换行*/
+				flex-wrap: wrap-reverse;
+				
+			}
+			.xue{
+				width: 100px;
+				height: 50px;
+				line-height: 50px;
+				background: red;
+				text-align: center;
+				color: white;
+				margin: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		
+			<ul class="box">
+				<li class="xue">xue1</li>
+				<li class="xue">xue2</li>
+				<li class="xue">xue3</li>
+				<li class="xue">xue4</li>
+				<li class="xue">xue5</li>
+				<li class="xue">xue6</li>
+				<li class="xue">xue7</li>
+				<li class="xue">xue8</li>
+				<li class="xue">xue9</li>
+			</ul>
+	</body>
+</html>

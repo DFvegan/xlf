@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../reset.css"/>
+		<style type="text/css">
+			.box{
+				width: 400px;
+				height: 400px;
+				background: bisque;
+				margin: 100px auto;
+				overflow: hidden;
+				/*flex转成弹性盒子*/
+				display: -webkit-flex;
+				display: flex;
+				/*默认值:表示主轴是水平正向*/
+				/*flex-direction: row;*/
+				
+				/*表示主轴是水平反向*/
+				/*flex-direction: row-reverse;*/
+				
+				/*表示主轴是垂直正向*/
+				/*flex-direction: column;*/
+				
+				/*表示主轴是垂直反向*/
+				flex-direction: column-reverse;
+			}
+			.xue{
+				width: 100px;
+				height: 50px;
+				line-height: 50px;
+				background: red;
+				text-align: center;
+				color: white;
+				margin: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--主轴方向：并不一定是水平方向,定义坛新星元素排列方向及 顺序-->
+		<!--设置方向:flex-direction：row/column/reverse-->
+		
+			<ul class="box">
+				<li class="xue">xue1</li>
+				<li class="xue">xue2</li>
+				<li class="xue">xue3</li>
+			</ul>
+	</body>
+</html>

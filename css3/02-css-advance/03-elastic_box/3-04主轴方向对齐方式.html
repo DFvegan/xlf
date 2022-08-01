@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../reset.css"/>
+		<style type="text/css">
+			.box{
+				width: 400px;
+				height: 400px;
+				background: bisque;
+				margin: 100px auto;
+				overflow: hidden;
+				/*flex转成弹性盒子*/
+				display: -webkit-flex;
+				display: flex;
+		
+				flex-direction: row;
+		
+				
+		
+				flex-wrap: wrap;
+				
+				/*子元素在主轴上的对齐方式*/
+				/*默认值:主轴开始方向对齐*/
+				/*justify-content: flex-start;*/
+				/*主轴结束对齐*/
+				/*justify-content: flex-end;*/
+				/*主轴居中对齐*/
+				/*justify-content: center;*/
+				/*justify-content: space-between;*/
+				/*项目之间距离是项目与容器之间距离两倍*/
+				justify-content: space-around;
+				
+				
+			}
+			.xue{
+				width: 100px;
+				height: 50px;
+				line-height: 50px;
+				background: red;
+				text-align: center;
+				color: white;
+				margin-top: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		
+			<ul class="box">
+				<li class="xue">xue1</li>
+				<li class="xue">xue2</li>
+				<li class="xue">xue3</li>
+			</ul>
+	</body>
+</html>
