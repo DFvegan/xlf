@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../reset.css"/>
+		<style type="text/css">
+			.box{
+				width: 400px;
+				height: 400px;
+				background: bisque;
+				margin: 100px auto;
+				overflow: hidden;
+				/*flex转成弹性盒子*/
+				display: -webkit-flex;
+				display: flex;
+		
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				align-items: stretch;
+				align-content: stretch;
+					
+			}
+			.xue{
+				width: 120px;
+				height: 50px;
+				line-height: 50px;
+				background: red;
+				text-align: center;
+				color: white;
+				/*margin-top: 10px;*/
+			}
+			#n1{
+				background: red;
+				width: 50px;
+				flex-grow: 1;
+			}
+			#n2{
+				background: green;
+				width: 70px;
+				flex-grow: 2;
+			}
+			#n3{
+				background: blue;
+				width: 100px;
+				flex-grow: 3;
+			}
+		</style>
+	</head>
+	<body>
+		<!--设置弹性元素的扩展比率来分配剩余空间-->
+		<!--flex-grow:0;-->
+		<!--未设置默认为0-->
+		
+			<ul class="box">
+				<li id="n1" class="xue">xue1</li>
+				<li id="n2" class="xue">xue2</li>
+				<li id="n3" class="xue">xue3</li>
+			</ul>
+	</body>
+</html>

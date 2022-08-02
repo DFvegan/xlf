@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../reset.css"/>
+		<style type="text/css">
+			.box{
+				width: 400px;
+				height: 400px;
+				background: bisque;
+				margin: 100px auto;
+				overflow: hidden;
+				/*flex转成弹性盒子*/
+				display: -webkit-flex;
+				display: flex;
+		
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				
+				align-items: stretch;
+				
+				
+				/*多行子元素在交叉轴上的对齐方式*/
+				/*多行子元素在交叉轴开始方向上的对齐*/
+				/*align-content: flex-start;*/
+				/*多行子元素在交叉轴结束方向上的对齐*/
+				/*align-content: flex-end;*/
+				/*两端对齐,中间项目间隔相等*/
+				/*align-content: space-between;*/
+				/*项目两侧间隔相等,项目之间的间隔比项目与边框的间隔大一倍*/
+				/*align-content: space-around;*/
+				align-content: stretch;
+				
+				
+				
+				
+				
+			}
+			.xue{
+				width: 120px;
+				height: 50px;
+				line-height: 50px;
+				background: red;
+				text-align: center;
+				color: white;
+				margin-top: 10px;
+			}
+			/*排列顺序:默认值为:0*/
+			/*order:增序进行布局*/
+			/*值越小越靠前*/
+			#n1{
+				order: 2;
+			}
+			#n2{
+				order: 1;
+			}
+			#n9{
+				order: 9;
+			}
+		</style>
+	</head>
+	<body>
+		
+			<ul class="box">
+				<li id="n1" class="xue">xue1</li>
+				<li id="n2" class="xue">xue2</li>
+				<li class="xue">xue3</li>
+				<li class="xue">xue4</li>
+				<li class="xue">xue5</li>
+				<li class="xue">xue6</li>
+				<li class="xue">xue7</li>
+				<li class="xue">xue8</li>
+				<li id="n9" class="xue">xue9</li>
+			</ul>
+	</body>
+</html>

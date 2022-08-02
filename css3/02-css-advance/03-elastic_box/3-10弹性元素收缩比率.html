@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../reset.css"/>
+		<style type="text/css">
+			.box{
+				width: 400px;
+				height: 400px;
+				background: bisque;
+				margin: 100px auto;
+				overflow: hidden;
+				/*flex转成弹性盒子*/
+				display: -webkit-flex;
+				display: flex;
+		
+				flex-direction: row;
+				flex-wrap: nowrap;
+				justify-content: space-between;
+				align-items: stretch;
+				align-content: stretch;
+					
+			}
+			.xue{
+				width: 120px;
+				height: 50px;
+				line-height: 50px;
+				background: red;
+				text-align: center;
+				color: white;
+				/*margin-top: 10px;*/
+			}
+			#n1{
+				background: red;
+				width: 100px;
+				flex-shrink: 1;
+			}
+			#n2{
+				background: green;
+				width: 200px;
+				flex-shrink: 2;
+			}
+			#n3{
+				background: blue;
+				width: 300px;
+				flex-shrink: 3;
+			}
+		</style>
+	</head>
+	<body>
+		<!--设置弹性元素的收缩比率-->
+		<!--flex-shrink：默认为1-->
+		公式：
+			<!--1.多出来的尺寸：200px-->
+			<!--2.总权重：元素1尺寸*收缩比率+元素2尺寸*收缩比率+元素3尺寸*收缩比率……例如：100*1+200*2+300*3=1400-->
+			<!--3.收缩空间：元素尺寸*收缩比率*多出的尺寸/总权重(最后减去原尺寸)-->
+			<!--#n1:100*1*200/1400（-100）=85.72-->
+			<!--#n2:200*2*200/1400（-200）=142.86-->
+			<!--#n3:300*3*200/1400（-300）=171.43-->
+			<ul class="box">
+				<li id="n1" class="xue">xue1</li>
+				<li id="n2" class="xue">xue2</li>
+				<li id="n3" class="xue">xue3</li>
+			</ul>
+	</body>
+</html>

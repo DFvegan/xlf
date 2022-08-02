@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../reset.css"/>
+		<style type="text/css">
+			.box{
+				width: 400px;
+				height: 400px;
+				background: bisque;
+				margin: 100px auto;
+				overflow: hidden;
+				display: -webkit-flex;
+				/*转换为弹性行内块级元素（IE10以下版本浏览器不支持）*/
+				display: inline-flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				align-items: center;	
+			}
+			.xue{
+				width: 100px;
+				height: 50px;
+				line-height: 50px;
+				background: red;
+				text-align: center;
+				color: white;
+				margin-top: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		
+			<!--<ul class="box">
+				<li class="xue">xue1</li>
+				<li class="xue">xue2</li>
+				<li class="xue">xue3</li>
+			</ul>-->
+			
+			<!--验证行级元素在弹性盒子中生效-->
+			<!--行级元素在弹性盒子中可以设置宽高-->
+			<!--<div class="box">
+				<span class="xue">我爱学习</span>
+				<span class="xue">我爱学习</span>
+				<span class="xue">我爱学习</span>
+			</div>-->
+			
+			
+			<!--验证行内块元素在弹性盒子中生效-->
+			<div class="box">
+				<img src="img/xue.jpg" class="xue"/>
+				<img src="img/xue.jpg" class="xue"/>
+				<img src="img/xue.jpg" class="xue"/>
+			</div>
+			<div class="box">
+				<img src="img/xue.jpg" class="xue"/>
+				<img src="img/xue.jpg" class="xue"/>
+				<img src="img/xue.jpg" class="xue"/>
+			</div>
+	</body>
+</html>
