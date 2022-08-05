@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../reset.css"/>
+		<style type="text/css">
+			html,body{
+				height:100%;
+			}
+			.box{
+				width: 50%;
+				height: 50%;
+				margin: 0 auto;
+				background: greenyellow;
+				font-size: 20px;
+				position: relative;
+			}
+			.xue{
+				background: red;
+				width: 50%;
+				height: 50%;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				text-align: center;
+				/*水平位移自己宽度一半*/
+				/*transform: translateX(-50%);*/
+				/*transform: translateY(-50%);*/
+				transform: translate(-50%,-50%);
+			}
+		</style>
+	</head>
+	<body>
+		<!--定位加位移居中法：
+			适用于所有元素类型父子之间尺寸
+			1.父元素相对定位：
+				relative
+			2.子元素绝对定位：
+				absolute
+				top：50%
+				left：50%
+				
+			3.外边距自动
+				transform: translate(-50%,-50%);-->
+					
+		<div class="box">
+			<!--<div class="xue"></div>-->
+			<span class="xue">
+				我爱学习
+			</span>
+		</div>
+	</body>
+</html>
