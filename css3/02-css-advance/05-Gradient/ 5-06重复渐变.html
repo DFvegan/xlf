@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>透明度渐变</title>
+		<link rel="stylesheet" type="text/css" href="../reset.css"/>
+		<style type="text/css">
+			.box{
+				width: 1000px;
+				height: 500px;
+				border: 1px solid black;
+				margin: 100px auto;
+				/*从完全不透明红色开始到完全透明红色结束*/
+				background: linear-gradient(90deg,rgba(255,0,0,1),rgba(255,0,0,0));
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box"></div>
+	</body>
+</html>

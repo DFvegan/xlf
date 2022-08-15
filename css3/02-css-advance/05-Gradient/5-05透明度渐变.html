@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>重复渐变</title>
+		<link rel="stylesheet" type="text/css" href="../reset.css"/>
+		<style type="text/css">
+			.box{
+				width: 1000px;
+				height: 200px;
+				border: 1px solid black;
+				margin: 100px auto;
+				/*从左到右重复线性渐变，重复两次（根据百分比决定）*/
+				background: repeating-linear-gradient(90deg,red,orange,yellow,green 50%);
+			}
+		</style>
+	</head>
+	<body>
+		<!--重复次数只与最后一个颜色设置百分比相关，前面其他颜色设置会有颜色节点属性，百分比计算按照单次渐变长度-->
+		<div class="box"></div>
+	</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>多个颜色结点分布</title>
+		<link rel="stylesheet" type="text/css" href="../reset.css"/>
+		<style type="text/css">
+			.box{
+				width: 300px;
+				height: 300px;
+				border: 1px solid black;
+				margin: 100px auto;
+				/*20%前是纯红色,60%后是纯蓝色*/
+				/*百分比之间的渐变是两个颜色的值*/
+				background: linear-gradient(90deg,red 20%,blue 40%,yellow 60%);
+				/*径向渐变,百分比按照半径划分*/
+				background: radial-gradient(circle,red 20%,blue 40%,yellow 60%);
+			}
+		</style>
+	</head>
+	<body>
+		<!--百分比渐变的区域为两个值之间-->
+		<div class="box"></div>
+	</body>
+</html>

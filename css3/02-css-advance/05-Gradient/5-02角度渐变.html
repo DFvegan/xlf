@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>角度线性渐变</title>
+		<link rel="stylesheet" type="text/css" href="../reset.css"/>
+		<style type="text/css">
+			.box{
+				width: 300px;
+				height: 300px;
+				border: 1px solid black;
+				margin: 100px auto;
+				/*从下到上,红色开始,蓝色结束*/
+				background: linear-gradient(0deg,red,blue);
+				/*从上到下,红色开始,蓝色结束*/
+				background: linear-gradient(180deg,red,blue);
+				/*从右到左,红色开始,蓝色结束*/
+				background: linear-gradient(270deg,red,blue);
+				/*从左上到右下,红色开始,蓝色结束*/
+				background: linear-gradient(135deg,red,blue);
+				/*从右下到左上,红色开始,蓝色结束*/
+				background: linear-gradient(315deg,red,blue);
+			}
+		</style>
+	</head>
+	<body>
+		<!--角度渐变-->
+		<!--语法：	background: linear-gradient(角度值,red,blue);-->
+		<div class="box"></div>
+	</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>径向渐变</title>
+		<link rel="stylesheet" type="text/css" href="../reset.css"/>
+		<style type="text/css">
+			.box{
+				width: 700px;
+				height: 300px;
+				border: 1px solid black;
+				margin: 100px auto;
+				/*椭圆形径向渐变,红色开始蓝色结束*/
+				background: radial-gradient(ellipse,red,blue);
+				/*圆形径向渐变,红色开始蓝色结束*/
+				background: radial-gradient(circle,red,blue);
+				/*多个颜色结点径向,红色开始,绿色,蓝色,黄色结束*/
+				background: radial-gradient(circle,red,green,blue,yellow);
+				/*多个颜色结点线性,红色开始,绿色,蓝色,黄色，青色，紫色结束*/
+				background: linear-gradient(90deg,red,green,blue,yellow,indigo,violet);
+			}
+		</style>
+	</head>
+	<body>
+		<!--径向渐变要素-->
+			<!--1.渐变形状，默认椭圆(ellipse)，随着宽高的变化在变化-->
+				<!--形状：圆形(circle)-->
+			<!--2.起始色和终止色-->
+		<!--径向渐变语法：background: radial-gradient(渐变形状，red,过渡色(可多个颜色)blue)-->
+		<div class="box"></div>
+	</body>
+</html>

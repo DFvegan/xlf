@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>渐变</title>
+		<link rel="stylesheet" type="text/css" href="../reset.css"/>
+		<style type="text/css">
+			.box{
+				width: 300px;
+				height: 300px;
+				border: 1px solid black;
+				margin: 100px auto;
+				/*background: linear-gradient(red,blue);*/
+				
+				background: linear-gradient(to top,red,blue);
+				
+				background: linear-gradient(to right,red,blue);
+				background: linear-gradient(to left,red,blue);
+				
+				/*从左上到右下*/
+				background: linear-gradient(to right bottom,red,blue);
+				/*从右下到左上*/
+				background: linear-gradient(to left top,red,blue);
+			}
+		</style>
+	</head>
+	<body>
+		<!--渐变种类：线性、径向-->
+		<!--线性渐变要素：
+			1.渐变方向
+			2.渐变起始色和终止色，至少两种（合法颜色值）
+			-->
+		<!--线性渐变语法：background: linear-gradient(渐变终止方向，起始颜色，终止颜色)-->
+		<!--默认值：从上到下-->
+		
+		
+		<!--对角方向渐变-->
+		<!--background: linear-gradient(to left top,red,blue);-->
+		<div class="box"></div>
+	</body>
+</html>
