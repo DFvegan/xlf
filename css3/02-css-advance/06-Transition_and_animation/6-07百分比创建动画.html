@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>百分比动画以及绑定动画 </title>
+		<link rel="stylesheet" type="text/css" href=""/>
+		<style type="text/css">
+			.box{
+				width: 100px;
+				height: 100px;
+				background: red;
+				margin: 100px auto;
+				/*绑定动画*/
+				animation: xue 5s;
+				
+			}
+			/*百分比创建动画*/
+			@keyframes xue{
+				0%{
+				width: 100px;
+				height: 100px;
+				background: red;
+				}
+				/*30%~50%相同属性:达到停顿效果*/
+				30%{
+				width: 200px;
+				height: 300px;
+				background: blue;
+				}
+				50%{
+				width: 200px;
+				height: 300px;
+				background: blue;
+				}
+				100%{
+				width: 300px;
+				height: 300px;
+				background: green;
+				}
+				
+			}
+		</style>
+	</head>
+	<body>
+		<!--动画：通过改变元素样式给元素添加动画效果-->
+		<!--1.先创建动画规则-->
+		<!--语法：@keyframes name{
+			frame{}
+			to{}
+		}-->
+		<!--2.引入到需要使用的元素中（类似于过渡）-->
+		<!--animation:name 动画完成时间 速度曲线  延迟开始时间-->
+		<div class="box"></div>
+	</body>
+</html>

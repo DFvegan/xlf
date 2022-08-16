@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>过渡简写</title>
+		<link rel="stylesheet" type="text/css" href="../reset.css"/>
+		<style type="text/css">
+			.box{
+				width: 100px;
+				height: 100px;
+				margin: 100px auto;
+				background: red;
+				/*1.所有过渡使用相同属性*/
+				/*综合属性名*/
+				/*transition: all 2s ease 2s;*/
+				
+				/*取消默认名字*/
+				/*transition: 2s ease 2s;*/
+				
+				/*取消默认名和默认过渡速度曲线*/
+				/*transition: 2s 2s;*/
+				
+				/*若没有过渡延迟时间*/
+				transition: 2s;
+			}
+			.box:hover{
+				width: 300px;
+				height: 300px;
+				background: green;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box"></div>
+	</body>
+</html>
