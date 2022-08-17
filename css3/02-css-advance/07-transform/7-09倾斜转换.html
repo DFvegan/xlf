@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../reset.css"/>
+		<style type="text/css">
+			.box{
+				width: 300px;
+				height: 300px;
+				background: gray;
+				margin: 300px auto;
+				/*视距属于transform的前置属性,写在父级中*/
+				perspective: 500px;
+			}
+			.xue{
+				width: 300px;
+				height: 300px;
+				background: red;
+				
+				
+			}
+			.xue:hover{
+				/*倾斜转换:元素有倾斜效果*/
+				/*值:角度deg,可以是负值*/
+				/*默认基点在元素中心*/
+				/*Z轴目前无倾斜*/
+				
+				/*X轴(水平倾斜),倾斜后与Y轴夹角是30deg,元素高度不变*/
+				/*正值逆时针旋转,负值顺时针旋转*/
+				transform: skewX(30deg);
+				
+				/*Y轴(水平倾斜),倾斜后与X轴夹角是30deg,元素高度不变*/
+				/*正值逆时针旋转,负值顺时针旋转*/
+				transform: skewY(30deg);
+				}
+				
+				/*若想同时设置两个轴不同角度倾斜就都设置，若只设置一个值就默认X轴倾斜*/
+				transform: skew(30deg,0);
+				}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="xue">
+			</div>
+		</div>
+	</body>
+</html>

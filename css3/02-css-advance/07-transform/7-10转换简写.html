@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../reset.css"/>
+		<style type="text/css">
+			.box{
+				width: 300px;
+				height: 300px;
+				background: gray;
+				margin: 300px auto;
+				/*视距属于transform的前置属性,写在父级中*/
+				perspective: 500px;
+			}
+			.xue{
+				width: 300px;
+				height: 300px;
+				background: red;
+				transition: transform 1s;
+				
+				
+			}
+			.xue:hover{
+				/*综合简写转换顺序：移动，缩放，旋转，倾斜*/
+				transform: translate(100px,50px) scale(0.5,0.8) rotateZ(-45deg) skew(30deg);
+				}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="xue">
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>缩放</title>
+		<link rel="stylesheet" type="text/css" href="../reset.css"/>
+		<style type="text/css">
+			.box{
+				width: 300px;
+				height: 300px;
+				background: gray;
+				margin: 300px auto;
+				perspective: 500px;
+			}
+			.xue{
+				width: 300px;
+				height: 300px;
+				background: red;
+				
+				
+			}
+			.xue:hover{
+				/*缩放负值:元素会反转*/
+				/*transform: scaleX(-0.5);*/
+				/*简写*/
+				transform: scale(2,3);
+				/*简写一个值两个x轴y轴同时缩放*/
+				transform: scale(2);
+				/*3d前面必须有前缀,必须分开写*/
+				transform: scale3d(2,3,4);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="xue">
+				我爱学习
+			</div>
+		</div>
+	</body>
+</html>
