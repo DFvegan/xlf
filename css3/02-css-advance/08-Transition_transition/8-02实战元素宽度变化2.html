@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>缩放方式</title>
+		<link rel="stylesheet" type="text/css" href="../reset.css"/>
+		<style type="text/css">
+			nav{
+				width: 400px;
+				height: 40px;
+				background: #363636;
+				margin: 100px auto;
+				display: flex;
+				justify-content: space-between;
+			}
+			div{
+				width: 100px;
+				height: 40px;
+				position: relative;
+			}
+			div:hover a{
+				background: #ca3333;
+				color: white;
+			}
+			
+			a{
+				display: block;
+				width: 100px;
+				height: 40px;
+				line-height: 40px;
+				text-align: center;
+				color: white;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			/*transfor缩放方式*/
+			/*p{
+				width: 10px;
+				height: 6px;
+				position: absolute;
+				top: -6px;
+				left: 50%;
+				margin-left: -5px;
+				
+			}
+			div:hover p{
+				transform: scaleX(10);
+				transition: transform 500ms ease;
+				background: #ca3333;
+			}*/
+			
+			
+			/*宽度width直接变化:从左到右进行慢慢变大*/
+			
+			p{
+				width: 10px;
+				height: 6px;
+				position: absolute;
+				top: -6px;
+				left: 0;
+				
+			}
+			div:hover p{
+				width: 100px;
+				transition: width 500ms ease;
+				background: #ca3333;
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<div>
+				<a href="#">首页</a>
+				<p></p>
+			</div>
+			<div>
+				<a href="#">商城</a>
+				<p></p>
+			</div>
+			<div>
+				<a href="#">论坛</a>
+				<p></p>
+			</div>
+		</nav>
+	</body>
+</html>

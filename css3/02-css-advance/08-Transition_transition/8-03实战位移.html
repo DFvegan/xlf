@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../reset.css"/>
+		<style type="text/css">
+			
+			.box{
+				width: 300px;
+				height: 260px;
+				margin: 100px auto;
+				border-radius: 10px;
+				overflow: hidden;
+				box-shadow: 0 0 3px 3px #CCCCCC;
+			}
+			.box img{
+				width: 300px;
+				height: 230px;
+				
+			}
+			.box span{
+				line-height: 30px;
+				padding-left: 10px;
+				display: block;
+				transition: transform 300ms;
+			}
+			.box:hover span{
+				
+				/*对行级元素没有效果*/
+				transform: translateX(100px);
+				color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<img src="../第三章 弹性盒子模型/img/776.jpg"/>
+			<span>层叠样式</span>
+		</div>
+	</body>
+</html>

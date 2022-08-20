@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../reset.css"/>
+		<style type="text/css">
+			
+			.box{
+				width: 800px;
+				height: 300px;
+				margin: 100px auto;
+				background: gray;
+				display: flex;
+				justify-content: space-between;
+			}
+			.pk{
+				width: 200px;
+				height: 300px;
+				position: relative;
+			}
+			
+			.pkbm,.pkzm{
+				width: 200px;
+				height: 300px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				transition: transform 1s linear;
+			}
+			.pkbm{
+				background: url(扑克/pk.jpg) no-repeat 100% 100%/1100% 500%;
+			}
+			.pkzm{
+				background: url(扑克/pk.jpg) no-repeat 0 0/1100% 500%;
+				backface-visibility: hidden;
+			}
+			.pk:hover .pkzm,.pk:hover .pkbm{
+				transform: rotateY(180deg);
+			}
+		</style>
+	</head>
+	<body>
+		<!--转换过度方式扑克反转-->
+		<div class="box">
+			<div class="pk">
+				<div class="pkbm"></div>
+				<div class="pkzm"></div>
+			</div>
+			<div class="pk">
+				<div class="pkbm"></div>
+				<div class="pkzm"></div>
+			</div>
+			<div class="pk">
+				<div class="pkbm"></div>
+				<div class="pkzm"></div>
+			</div>
+		</div>
+	</body>
+</html>

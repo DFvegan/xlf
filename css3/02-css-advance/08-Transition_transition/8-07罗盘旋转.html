@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>罗盘转动</title>
+		<link rel="stylesheet" type="text/css" href="../reset.css"/>
+		<style type="text/css">
+			
+			.lp{
+				width: 600px;
+				height: 600px;
+				border-radius: 50%;
+				margin: 50px auto;
+				position: relative;
+				overflow: hidden;
+			}
+			.lp img{
+				width: 600px;
+				height: 600px;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			.lp .lp01{
+				animation: lpzd1 30s linear infinite;
+			}
+			.lp .lp02{
+				animation: lpzd2 60s linear infinite;
+			}
+			.lp .lp03{
+				animation: lpzd1 120s linear infinite;
+			}
+			.lp .lp04{
+				animation: lpzd2 180s linear infinite;
+			}
+			@keyframes lpzd1{
+				0%{
+					transform: rotateZ(0deg);
+				}
+				100%{
+					transform: rotateZ(360deg);
+				}
+			}
+			@keyframes lpzd2{
+				0%{
+					transform: rotateZ(0deg);
+				}
+				100%{
+					transform: rotateZ(-360deg);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="lp">
+			<img class="lp01" src="轮盘/lp01.png"/>
+			<img class="lp02" src="轮盘/lp02.png"/>
+			<img class="lp03" src="轮盘/lp03.png"/>
+			<img class="lp04" src="轮盘/lp04.png"/>
+		</div>
+	</body>
+</html>

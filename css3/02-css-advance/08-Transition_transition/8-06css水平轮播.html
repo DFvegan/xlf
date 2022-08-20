@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../reset.css"/>
+		<style type="text/css">
+			.content{
+				background: #092741;
+				margin-top: 100px;
+				/*提取颜色
+				#092741
+				#144c65
+				#ff0900*/
+				animation: bj 15s linear infinite;
+			}
+			.box{
+				width: 800px;
+				height: 300px;
+				margin: 0 auto;
+				position: relative;
+				overflow: hidden;
+			}
+			.box .slide{
+				width: 400%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				animation: splb 15s linear infinite;
+				
+			}
+			/*挪动暂停效果*/
+			.content:hover,.content:hover .slide{
+				animation-play-state: paused;
+			}
+			.box .slide:hover{
+				animation-play-state: paused;
+			}
+			.box .slide a{
+				width: 25%;
+				height: 100%;
+				display: block;
+				float: left;
+			}
+			.box .slide a img{
+				width: 100%;
+				height: 100%;
+			}
+			@keyframes splb{
+				0%{
+					left: 0;
+				}
+				20%{
+					left: 0;
+				}
+				33%{
+					left: -100%;
+				}
+				53%{
+					left: -100%;
+				}
+				67%{
+					left: -200%;
+				}
+				87%{
+					left: -200%;
+				}
+				100%{
+					left: -300%;
+				}
+			}
+			@keyframes bj{
+				0%{
+					background: #092741;
+				}
+				20%{
+					background: #092741;
+				}
+				25%{
+					background: #144c65;
+				}
+				53%{
+					background: #144c65;
+				}
+				58%{
+					background: #ff9000;
+				}
+				87%{
+					background: #ff9000;
+				}
+				92%{
+					background: #092741;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="content">
+			<div class="box">
+				<div class="slide">
+					<a href="">
+						<img src="轮播图/lbt01.jpg"/>
+					</a>
+					<a href="">
+						<img src="轮播图/lbt02.jpg"/>
+					</a>
+					<a href="">
+						<img src="轮播图/lbt03.jpg"/>
+					</a>
+					<a href="">
+						<img src="轮播图/lbt01.jpg"/>
+					</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

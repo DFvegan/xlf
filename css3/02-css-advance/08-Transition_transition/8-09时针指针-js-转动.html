@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>钟表转动(js预热)</title>
+		<link rel="stylesheet" type="text/css" href="../reset.css"/>
+		<style type="text/css">
+			.zb{
+				width: 300px;
+				height: 300px;
+				border-radius: 50%;
+				overflow: hidden;
+				margin: 50px auto;
+				background: url(指针/szbj.png) no-repeat 0 0/100% 100%;
+				position: relative;
+			}
+			.zb img{
+				width: 300px;
+				height: 300px;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="zb">
+			<img id="sz" src="指针/szsz.png"/>
+			<img id="fz" src="指针/szfz.png"/>
+			<img id="mz" src="指针/szmz.png"/>
+		</div>
+		
+		<script type="text/javascript">
+			window.onload=function(){
+				function szzd (){
+					var myDate= new Date;
+	//				获取小时
+					var hh=myDate.getHours();
+					var h=hh<12?hh:hh-12;
+					
+	//				获取分秒
+					var m=myDate.getMinutes();
+					var s=myDate.getSeconds();
+					
+	//				根据时间调整度数
+					document.getElementById("mz").style.transform = "rotateZ("+s*6+"deg)";
+					document.getElementById("fz").style.transform = "rotateZ("+(m*6+s*0.1)+"deg)";
+					document.getElementById("sz").style.transform = "rotateZ("+(h*30+m*0.5)+"deg)";
+				
+				};
+//				每一秒转动一次
+				szzd ();
+				setInterval(szzd,1000);
+			};
+			
+			
+			
+		</script>
+	</body>
+</html>

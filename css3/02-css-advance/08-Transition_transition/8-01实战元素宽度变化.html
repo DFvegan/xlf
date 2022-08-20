@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Y轴旋转90度变化</title>
+		<link rel="stylesheet" type="text/css" href="../reset.css"/>
+		<style type="text/css">
+			nav{
+				width: 400px;
+				height: 40px;
+				background: #363636;
+				margin: 100px auto;
+				display: flex;
+				justify-content: space-between;
+			}
+			div{
+				width: 100px;
+				height: 40px;
+				position: relative;
+			}
+			div:hover a{
+				background: #ca3333;
+				color: white;
+			}
+			div:hover p{
+				transform: rotateY(0deg);
+				transition: transform 500ms ease;
+			}
+			a{
+				display: block;
+				width: 100px;
+				height: 40px;
+				line-height: 40px;
+				text-align: center;
+				color: white;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			p{
+				width: 100px;
+				height: 6px;
+				position: absolute;
+				top: -6px;
+				left: 0;
+				background: #ca3333;
+				transform: rotateY(90deg);
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<div>
+				<a href="#">首页</a>
+				<p></p>
+			</div>
+			<div>
+				<a href="#">商城</a>
+				<p></p>
+			</div>
+			<div>
+				<a href="#">论坛</a>
+				<p></p>
+			</div>
+		</nav>
+	</body>
+</html>
