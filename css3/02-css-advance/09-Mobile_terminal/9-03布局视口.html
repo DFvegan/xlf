@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+		<title>三种视口</title>
+		<link rel="stylesheet" type="text/css" href=""/>
+		<style type="text/css">
+			div{
+				width: 375px;
+				height: 375px;
+				background: red;
+				margin: 0 auto;
+				color: white;
+				font-size: 20px;
+				text-align: center;
+				line-height: 375px;
+			}
+			@media only screen and (max-width:600px ) {
+				div{
+					background: green;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<!--视口：viewport（初始包含块）/只有pc端存在视口，尽早声名-->
+		<!--布局视口：-->
+			<!--在pc端与浏览器宽度保持一致，但在手机上，视口与移动浏览器屏幕宽度不关联-->
+			<!--通常移动端的布局视口默认设置为980px-->
+		
+			
+			
+			
+		<!--视觉视口-->
+			<!--用户通过缩放方式查看的区域-->
+			<!--用户缩小网页，我们看到的网页区域变大，，此时视觉窗口变大-->
+			<!--用户放大网页，我们看到的网页区域缩小，，此时视觉窗口变小-->
+		
+		<!--理想视口-->
+			<!--设备浏览器的显示区域-->
+			
+		<div>我爱学习</div>
+	</body>
+</html>

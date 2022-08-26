@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href=""/>
+		<style type="text/css">
+			
+			.xue{
+				width: 100px;
+				height: 100px;
+				margin: 50px auto;
+				background: red;
+			}
+			/*min-width：800以及800以上元素样式*/
+			/*@media only screen and (min-width: 800px) {
+				.xue{
+					background: blue;
+				}
+			}*/
+			
+			/*max-width：800以及800以下元素样式*/
+			/*@media only screen and (max-width: 800px) {
+				.xue{
+					background: blue;
+				}
+			}*/
+			
+			/*600~800元素样式;and连接*/
+			/*@media only screen and (min-width: 600px)and (max-width: 800px) {
+				.xue{
+					background: blue;
+				}
+			}*/
+			
+			
+			/*400~600;600~800元素样式;注意顺序会被覆盖*/
+			@media only screen and (max-width: 400px){
+				.xue{
+					background: orange;
+				}
+			}
+			@media only screen and (min-width: 600px){
+				.xue{
+					background: green;
+				}
+			}
+			@media only screen and (min-width: 800px){
+				.xue{
+					background: blue;
+				}
+			}
+			
+			
+			
+		</style>
+	</head>
+	<body>
+		<!--媒体查询@media：针对不同的媒体类型定义不同的样式-->
+		<!--only:指定某种特定媒体类型，可以用来排除不支持的媒体查询的浏览器-->
+		<!--screen:用于电脑屏幕，平板电脑，智能手机-->
+		<div class="xue"></div>
+	</body>
+</html>
