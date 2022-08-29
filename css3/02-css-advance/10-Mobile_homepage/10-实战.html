@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+		<title>实战移动页面</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/10-实战.css"/>
+		<script src="js/jquery1.12.4.mini.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$("function"){
+				var i=0;
+				var sd=$(".slide .box a");
+				
+				function rota(){
+					i++;
+					
+					if (i==sd.length) {
+						i=0
+					} ;
+					sd.eq(i).addClass("rota1").removeClass("rota2");
+					sd.eq(i).siblings("a").addClass("rota2").removeClass("rota1");	
+				}
+				
+				setInterval(rota,4000);
+			}
+		</script>
+	</head>
+	<body>
+		<!--页面分析：-->
+		<!--1.头部区块-->
+		<!--头部开始-->
+		<header>
+			<a href="#" class="logo"></a>
+			<a href="#" class="app" download="xue">下载APP</a>
+			<a href="#" class="search"></a>
+		</header>
+		<!--头部结束-->
+		
+		<!--2.幻灯片区块-->
+		<!--幻灯片开始-->
+		<div class="slide">
+			<div class="box">
+			<a href="#" class="active">
+				<img src="img/s1.jpg"/>
+			</a>
+			<a href="#">
+				<img src="img/s2.jpg"/>
+			</a>
+			<a href="#">
+				<img src="img/s3.jpg"/>
+			</a>
+			<a href="#">
+				<img src="img/321.jpg"/>
+			</a>
+			</div>
+		</div>
+		<!--幻灯片结束-->
+		<!--3.图片导航（宣传）-->
+		<!--图片开始-->
+		<nav>
+			<a href="#">
+				<p class="back1"></p>
+				<h3>电脑办公</h3>
+			</a>
+			<a href="#">
+				<p class="back2"></p>
+				<h3>平面设计</h3>
+			</a>
+			<a href="#">
+				<p class="back3"></p>
+				<h3>室内设计</h3>
+			</a>
+			<a href="#">
+				<p class="back4"></p>
+				<h3>室外设计</h3>
+			</a>
+			<a href="#">
+				<p class="back5"></p>
+				<h3>影视动画</h3>
+			</a>
+			<a href="#">
+				<p class="back6"></p>
+				<h3>机械设计</h3>
+			</a>
+			<a href="#">
+				<p class="back7"></p>
+				<h3>工业自动化</h3>
+			</a>
+			
+			<a href="#">
+				<p class="back8"></p>
+				<h3>网页设计</h3>
+			</a>
+			<a href="#">
+				<p class="back9"></p>
+				<h3>电脑办公</h3>
+			</a>
+			<a href="#">
+				<p class="back10"></p>
+				<h3>电脑办公</h3>
+			</a>
+		</nav>
+		<!--图片结束-->
+		<!--4.职业选课区块-->
+		<!--选课开始-->
+		<div class="xk">
+			<a href="#">
+				<img src="img/classify.png" width="100%"/>
+			</a>
+		</div>
+		<!--选课结束-->
+		<!--5.课程区块-->
+		<!--课程区块开始-->
+		<div class="text-box">
+			<div class="title">
+				<span class="fl">最新推出</span>
+				<a class="fr" href="#">更多>></a>
+			</div>
+			
+			<div class="content">
+				<a href="#">
+					<img src="img/290.jpg"/>
+					<h2>UG NX12道具设计教程</h2>
+					<p>
+						共<span class="num1">180</span>小节已有
+						<span class="num2">1845</span>人学过
+					</p>
+				</a>
+				<a href="#">
+					<img src="img/30.jpg"/>
+					<h2>UG NX12道具设计教程</h2>
+					<p>
+						共<span class="num1">180</span>小节已有
+						<span class="num2">1845</span>人学过
+					</p>
+				</a>
+				<a href="#">
+					<img src="img/321.jpg"/>
+					<h2>UG NX12道具设计教程</h2>
+					<p>
+						共<span class="num1">180</span>小节已有
+						<span class="num2">1845</span>人学过
+					</p>
+				</a>
+				<a href="#">
+					<img src="img/337.jpg"/>
+					<h2>UG NX12道具设计教程</h2>
+					<p>
+						共<span class="num1">180</span>小节已有
+						<span class="num2">1845</span>人学过
+					</p>
+				</a>
+				
+			</div>
+		</div>
+		
+		<div class="text-box">
+			<div class="title">
+				<span class="fl">最新推出</span>
+				<a class="fr" href="#">更多>></a>
+			</div>
+			
+			<div class="content">
+				<a href="#" class="one-a">
+					<img src="img/354.jpg"/>
+					<h2>UG NX12道具设计教程</h2>
+					<p>
+						共<span class="num1">180</span>小节已有
+						<span class="num2">1845</span>人学过
+					</p>
+				</a>
+				<a href="#">
+					<img src="img/362.jpg"/>
+					<h2>UG NX12道具设计教程</h2>
+					<p>
+						共<span class="num1">180</span>小节已有
+						<span class="num2">1845</span>人学过
+					</p>
+				</a>
+				<a href="#">
+					<img src="img/380.jpg"/>
+					<h2>UG NX12道具设计教程</h2>
+					<p>
+						共<span class="num1">180</span>小节已有
+						<span class="num2">1845</span>人学过
+					</p>
+				</a>
+				<a href="#">
+					<img src="img/434.jpg"/>
+					<h2>UG NX12道具设计教程</h2>
+					<p>
+						共<span class="num1">180</span>小节已有
+						<span class="num2">1845</span>人学过
+					</p>
+				</a>
+				<a href="#">
+					<img src="img/455.jpg"/>
+					<h2>UG NX12道具设计教程</h2>
+					<p>
+						共<span class="num1">180</span>小节已有
+						<span class="num2">1845</span>人学过
+					</p>
+				</a>
+				</div>
+			</div>
+			<div class="text-box">
+			<div class="title">
+				<span class="fl">最新推出</span>
+				<a class="fr" href="#">更多>></a>
+			</div>
+			
+			<div class="content">
+				<a href="#" class="one-a">
+					<img src="img/354.jpg"/>
+					<h2>UG NX12道具设计教程</h2>
+					<p>
+						共<span class="num1">180</span>小节已有
+						<span class="num2">1845</span>人学过
+					</p>
+				</a>
+				<a href="#">
+					<img src="img/362.jpg"/>
+					<h2>UG NX12道具设计教程</h2>
+					<p>
+						共<span class="num1">180</span>小节已有
+						<span class="num2">1845</span>人学过
+					</p>
+				</a>
+				<a href="#">
+					<img src="img/380.jpg"/>
+					<h2>UG NX12道具设计教程</h2>
+					<p>
+						共<span class="num1">180</span>小节已有
+						<span class="num2">1845</span>人学过
+					</p>
+				</a>
+				<a href="#">
+					<img src="img/434.jpg"/>
+					<h2>UG NX12道具设计教程</h2>
+					<p>
+						共<span class="num1">180</span>小节已有
+						<span class="num2">1845</span>人学过
+					</p>
+				</a>
+				<a href="#">
+					<img src="img/455.jpg"/>
+					<h2>UG NX12道具设计教程</h2>
+					<p>
+						共<span class="num1">180</span>小节已有
+						<span class="num2">1845</span>人学过
+					</p>
+				</a>
+			</div>	
+			</div>
+			<div class="text-box">
+			<div class="title">
+				<span class="fl">最新推出</span>
+				<a class="fr" href="#">更多>></a>
+			</div>
+			
+			<div class="content">
+				<a href="#" class="one-a">
+					<img src="img/354.jpg"/>
+					<h2>UG NX12道具设计教程</h2>
+					<p>
+						共<span class="num1">180</span>小节已有
+						<span class="num2">1845</span>人学过
+					</p>
+				</a>
+				<a href="#">
+					<img src="img/362.jpg"/>
+					<h2>UG NX12道具设计教程</h2>
+					<p>
+						共<span class="num1">180</span>小节已有
+						<span class="num2">1845</span>人学过
+					</p>
+				</a>
+				<a href="#">
+					<img src="img/380.jpg"/>
+					<h2>UG NX12道具设计教程</h2>
+					<p>
+						共<span class="num1">180</span>小节已有
+						<span class="num2">1845</span>人学过
+					</p>
+				</a>
+				<a href="#">
+					<img src="img/434.jpg"/>
+					<h2>UG NX12道具设计教程</h2>
+					<p>
+						共<span class="num1">180</span>小节已有
+						<span class="num2">1845</span>人学过
+					</p>
+				</a>
+				<a href="#">
+					<img src="img/455.jpg"/>
+					<h2>UG NX12道具设计教程</h2>
+					<p>
+						共<span class="num1">180</span>小节已有
+						<span class="num2">1845</span>人学过
+					</p>
+				</a>
+			</div>	
+			</div>
+		</div>
+		<!--课程区块结束-->
+		<!--6.尾部区块-->
+		<!--尾部开始-->
+		<footer>
+			<p>
+				<span>我是有底线的</span>
+			</p>
+			<hr />
+			<div>我要学习版权所有@
+				<a href="#">电脑版</a>
+			</div>
+		</footer>
+		
+		<!--尾部结束-->
+	</body>
+</html>
