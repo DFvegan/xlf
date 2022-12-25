@@ -1,6 +1,0 @@
-ECMA国际标准化组织:
-ECMAScript：简称ES,Java Script的一个标准
-Java Script:
-网景公司开发的一种脚本语言
-JScript:
-微软公司发明的一种脚本语言
